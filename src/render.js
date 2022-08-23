@@ -8,7 +8,7 @@ export const renderContact = ({name, tel}) => {
     <h2 class='contact__title'>
       ${name}
     </h2>
-    <a href='tel:+380111111111'>
+    <a href='${tel}'>
       ${tel}
     </a>
 `;
