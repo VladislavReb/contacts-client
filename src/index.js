@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const form = document.querySelector('form');
 
   Object.values(contacts).forEach(renderContact)
+
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const isValid = [...form.elements].filter((input) => input.tagName === 'INPUT')
