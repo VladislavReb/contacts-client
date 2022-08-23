@@ -7,12 +7,12 @@ export const checkInput = (input) => {
   }
 
   if(input.value.length < min) {
-    input.nextElementSibling.innerText = `${input.name} should NOT be shorter than ${min} characters`;
+    input.nextElementSibling.innerText = `This field has min value ${min}`;
     return false;
   }
 
   if(input.value.length > max) {
-    input.nextElementSibling.innerText = `${input.name} should NOT be longer than ${max} characters`;
+    input.nextElementSibling.innerText = `This field has max value ${max}`;
     return false;
   }
   input.nextElementSibling.innerText = ""
